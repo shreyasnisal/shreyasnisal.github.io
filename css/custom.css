@@ -118,7 +118,7 @@ header{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000;
+    background: linear-gradient(to right, #42275a , #734b6d);
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
@@ -130,9 +130,9 @@ header{
 /*    top: -100vh;*/
     z-index: 50;
     position: fixed;
-    background-color: #614385;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
+    background: linear-gradient(to right, #42275a , #734b6d);
+/*    border-bottom-right-radius: 100%;*/
+/*    border-bottom-left-radius: 100%;*/
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
@@ -152,7 +152,7 @@ li{
 
 .nav-link{
 /*    font-family: 'The Historia Demo', sans-serif;*/
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem;
 }
 
@@ -314,6 +314,7 @@ li{
 .card {
     margin: 0;
     display: flex;
+    align-items: flex-start;
     flex-grow: 1;
     width: 20%;
     margin-left: 20px;
@@ -494,7 +495,7 @@ input[type="submit"]:hover{
 .fa-youtube,
 .fa-blogger,
 .fa-github{
-    font-size: 5rem;
+    font-size: 4rem;
     transition: color 650ms;
 }
 

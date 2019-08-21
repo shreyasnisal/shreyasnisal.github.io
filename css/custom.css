@@ -327,7 +327,8 @@ li{
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    cursor: pointer;
+/*    cursor: pointer;*/
+    cursor: default;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 

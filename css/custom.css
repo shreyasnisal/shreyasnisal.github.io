@@ -314,9 +314,11 @@ li{
     margin-bottom: 5rem;
 }
 
+/*
 .project-item:last-child{
     margin-bottom: 0;
 }
+*/
 
 .project-items{
     display: flex;

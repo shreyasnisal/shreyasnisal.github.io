@@ -137,6 +137,10 @@ header{
     transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
+.nav-brand{
+    font-size: 3rem;
+}
+
 .nav-list{
     list-style: none;
     width: 100%;
@@ -145,6 +149,40 @@ header{
 /*    justify-content: center;*/
     justify-content: space-evenly;
     align-items: center;
+}
+
+.project-page{
+    justify-content: normal;
+}
+
+.project-page-header{
+    height: 5vh;
+}
+
+.project-page-title{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.project-page-title h1{
+    font-size: 7rem;
+    opacity: .3;
+}
+
+.section-heading a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    text-decoration: underline;
+}
+
+.section-heading i{
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
 }
 
 li{

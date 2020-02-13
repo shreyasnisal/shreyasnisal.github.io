@@ -151,24 +151,6 @@ header{
     align-items: center;
 }
 
-.project-page{
-    justify-content: normal;
-}
-
-.project-page-header{
-    height: 5vh;
-}
-
-.project-page-title{
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 0;
-}
-
-.project-page-title h1{
-    font-size: 7rem;
-    opacity: .3;
-}
 
 .section-heading a{
     font-size: 1.6rem;
@@ -619,6 +601,68 @@ input[type="submit"]:hover{
 
 /*End footer*/
 
+/*Start Project Pages*/
+
+.project-page{
+    justify-content: normal;
+}
+
+.project-page-header{
+    height: 5vh;
+}
+
+.project-page-head{
+    margin-top: 5rem;
+}
+
+.project-page-title{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.project-page-title h1{
+    font-size: 7rem;
+    opacity: .7;
+}
+
+.project-page-intro-text {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.project-heading{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 5rem;
+}
+
+.project-heading h1{
+    font-size: 5rem;
+    opacity: .3;
+}
+
+.project-heading h6{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.top-padded{
+    padding-top: 5rem;
+}
+
+.project-section {
+    padding: 4rem;
+}
+
+.content-box{
+    text-align: justify;
+}
+
+
+/*End Project Pages*/
+
 /*Start animations*/
 
 @keyframes pulse {
@@ -667,6 +711,10 @@ input[type="submit"]:hover{
     
     .card{
         flex-grow: 1;
+    }
+    
+    .top-padded{
+        padding-top: 0;
     }
 }
 
@@ -738,6 +786,17 @@ input[type="submit"]:hover{
     .card{
         width: 50%;
     }
+    
+    .project-page-title h1{
+        font-size: 6rem;
+        opacity: .7;
+    }
+    
+    .project-heading h1{
+        font-size: 4rem;
+        opacity: .3;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -795,6 +854,32 @@ input[type="submit"]:hover{
     
     .up{
         right: 2rem;
+    }
+    
+    .project-page-title h1{
+        font-size: 5rem;
+        opacity: .7;
+    }
+    
+    .project-heading h1{
+        font-size: 3rem;
+        opacity: .3;
+    }
+    
+    .project-section {
+        padding: 2rem;
+    }
+    
+    .content-box{
+        text-align: justify;
+    }
+    
+    .project-heading{
+        margin-bottom: 3rem;
+    }
+    
+    .project-page-intro-text {
+        text-align: justify;
     }
     
 }

@@ -663,6 +663,18 @@ input[type="submit"]:hover{
 
 /*End Project Pages*/
 
+/*Start video section*/
+
+.video-items{
+    display: flex;
+}
+
+.video-img{
+    width: 40%;
+}
+
+/*End video section*/
+
 /*Start animations*/
 
 @keyframes pulse {
@@ -715,6 +727,16 @@ input[type="submit"]:hover{
     
     .top-padded{
         padding-top: 0;
+    }
+    
+    .video-items{
+/*        display: block;*/
+        text-align: center;
+    }
+    
+    .video-img{
+        width: 45%;
+        margin-bottom: 3rem;
     }
 }
 
@@ -795,6 +817,18 @@ input[type="submit"]:hover{
     .project-heading h1{
         font-size: 4rem;
         opacity: .3;
+    }
+    
+    .video-items{
+/*        display: block;*/
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .video-img{
+        width: 50%;
+        margin-bottom: 3rem;
     }
 
 }
@@ -880,6 +914,16 @@ input[type="submit"]:hover{
     
     .project-page-intro-text {
         text-align: justify;
+    }
+    
+    .video-items{
+        display: block;
+        text-align: center;
+    }
+    
+    .video-img{
+        width: 100%;
+        margin-bottom: 3rem;
     }
     
 }

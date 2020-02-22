@@ -673,6 +673,10 @@ input[type="submit"]:hover{
     width: 40%;
 }
 
+.video-img a img:hover{
+    box-shadow: 12px 5px 2px 1px rgba(0, 0, 0, .2);
+}
+
 /*End video section*/
 
 /*Start animations*/

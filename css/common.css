@@ -9,6 +9,8 @@ html{
     font-family: Consolas, monaco, monospace;
     color: #000;
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 body{
@@ -212,6 +214,7 @@ header{
 
 .video-item img {
     width: 30%;
+    height: 100%;
 }
 
 .video-item:hover img {

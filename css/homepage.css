@@ -246,6 +246,7 @@ input[type=text] {
   height: 25px;
   color: #666;
   padding: 5px;
+  cursor: pointer;
 }
 
 .browser-content {
@@ -299,6 +300,10 @@ ul li ul li {
   position: relative;
   top: 4px;
   background: url("https://i.imgur.com/YO1WL.png") no-repeat;
+}
+
+#sidebar a:hover {
+    font-weight: bold;
 }
 
 #finder {
@@ -403,35 +408,35 @@ ul li ul li {
 /*    max-width: 90px;*/
 }
 
-.fa-envelope:hover {
+.folder:hover .fa-envelope {
     color: #ffc83f;
 }
 
-.fa-twitter-square:hover{
+.folder:hover .fa-twitter-square{
     color: #00acee;
 }
 
-.fa-youtube-square:hover{
+.folder:hover .fa-youtube-square{
     color: #c4302b;
 }
 
-.fa-linkedin:hover{
+.folder:hover .fa-linkedin{
     color: #0077B5;
 }
 
-.fa-medium:hover{
+.folder:hover .fa-medium{
     color: #000;
 }
 
-.fa-wordpress:hover{
+.folder:hover .fa-wordpress{
     color: #21759b;
 }
 
-.fa-blogger:hover{
+.folder:hover .fa-blogger{
     color:#ff5722;
 }
 
-.fa-github-square:hover{
+.folder:hover .fa-github-square{
     color: #333;
 }
 

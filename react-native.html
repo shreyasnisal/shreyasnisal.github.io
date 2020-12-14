@@ -1,22 +1,42 @@
 <!DocType html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/projects.css">
-        <link rel="shortcut icon" type="image/png" href="./img/favicon-16x16.png"/>
-        <script data-ad-client="ca-pub-8655243817017554" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <title>React Native Projects</title>
-    </head>
-    <body>
-        <div class="project-heading">
-            <h1>&lt;React Native Projects&gt;</h1>
-        </div>
-        
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon-16x16.png" />
+    <script data-ad-client="ca-pub-8655243817017554" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title>React Native Projects</title>
+</head>
+
+<body>
+
+    <div class="menu-toggler collapse not-open">
+        <div class="bar start"></div>
+        <div class="bar mid"></div>
+        <div class="bar end"></div>
+    </div>
+    <div class="sidenav">
+        <a id="home-navitem" class="nav-link" href="index.html">Home</a>
+        <a id="projects-navitem" class="nav-link" href="index.html#projects">Projects</a>
+        <a id="programmingvideos-navitem" class="nav-link" href="index.html#programmingvideos">Programming Videos</a>
+        <a id="about-navitem" class="nav-link" href="index.html#about">About</a>
+        <a id="connect-navitem" class="nav-link" href="index.html#connect">Connect</a>
         <hr>
-        
+        <a target="_blank" href="resume/Resume_ShreyasNisal.pdf" class="nav-link">R&eacute;sum&eacute;</a>
+    </div>
+
+    <div class="project-heading">
+        <h1>&lt;React Native Projects&gt;</h1>
+    </div>
+
+    <hr>
+
+    <div id="content">
         <div class="container">
             <h2>&lt;Voice Quiz App&gt;</h2>
             <h6><a target="_blank" href="https://github.com/shreyasnisal/Quiz-App">GitHub</a></h6>
@@ -25,23 +45,41 @@
                     <img src="img/QuizApp.png" />
                 </div>
                 <div class="notepad-container">
-                    
+
                     <div class="textcontainer">
-                        <p>Orginally developed as a normal quiz applications with a database of 90 questions with a back end of Java and MySQL, I made a lot of changes to make it interesting. I moved the database to a JSON (JavaScript Object Notation) file within the app itself, to eliminate dependency on a back end.<br><br>Later, I decided to play around with the speech recognition and synthesis libraries in React Native, and made the app completely voice controlled. Apart from the phonetic analysis done by these libraries itself, there is no conventional NLP algorithm being used, and yet the conversation is smooth and natural.<br><br>Other than answering questions using voice, the user can also ask the app to repeat questions, read out options, or skip questions, among a lot of other options. The app also detects negatives in a statement to correctly recognize what the user does NOT want done. All of this done by simply iterating through the text generated from speech and detecting certain words!</p>
+                        <p>Orginally developed as a normal quiz applications with a database of 90 questions with a back
+                            end of Java and MySQL, I made a lot of changes to make it interesting. I moved the database
+                            to a JSON (JavaScript Object Notation) file within the app itself, to eliminate dependency
+                            on a back end.<br><br>Later, I decided to play around with the speech recognition and
+                            synthesis libraries in React Native, and made the app completely voice controlled. Apart
+                            from the phonetic analysis done by these libraries itself, there is no conventional NLP
+                            algorithm being used, and yet the conversation is smooth and natural.<br><br>Other than
+                            answering questions using voice, the user can also ask the app to repeat questions, read out
+                            options, or skip questions, among a lot of other options. The app also detects negatives in
+                            a statement to correctly recognize what the user does NOT want done. All of this done by
+                            simply iterating through the text generated from speech and detecting certain words!</p>
                     </div>
                 </div>
             </div>
             <h2>&lt;/Voice Quiz App&gt;</h2>
-            
+
             <hr>
-            
-            
+
+
             <h2>&lt;Chat App&gt;</h2>
             <h6><a target="_blank" href="https://github.com/shreyasnisal/Chat-App">GitHub</a></h6>
             <div class="flex-container">
                 <div class="notepad-container">
                     <div class="textcontainer">
-                        <p>The Chat-App app allows users to sign up and send/recieve messages from other users registered in the app. The app uses a back end written in Java, with a MySQL database to store login information and messages.<br><br>The app has multiple issues as far as usability is concerned. In the absence of encryption protocols, passwords in the MySQL database are stored as plain text and transmitted over the network in the same way. The app also does not use websockets, and users do not receive messages in real-time. Rather, they must hit refresh to receive new messages.<br><br>As one of my first applications, I was happy with this limited functionality, and my takeaway was a better understanding of React Native, redux, and network concepts.</p>
+                        <p>The Chat-App app allows users to sign up and send/recieve messages from other users
+                            registered in the app. The app uses a back end written in Java, with a MySQL database to
+                            store login information and messages.<br><br>The app has multiple issues as far as usability
+                            is concerned. In the absence of encryption protocols, passwords in the MySQL database are
+                            stored as plain text and transmitted over the network in the same way. The app also does not
+                            use websockets, and users do not receive messages in real-time. Rather, they must hit
+                            refresh to receive new messages.<br><br>As one of my first applications, I was happy with
+                            this limited functionality, and my takeaway was a better understanding of React Native,
+                            redux, and network concepts.</p>
                     </div>
                 </div>
                 <div class="phone-container">
@@ -49,14 +87,20 @@
                 </div>
             </div>
             <h2>&lt;/Chat App&gt;</h2>
-            
+
         </div>
 
         <hr>
-            
+
         <div class="project-end">
             <h1>&lt;/React Native Projects&gt;</h1>
         </div>
-        
-    </body>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/projects.js"></script>
+
+</body>
+
 </html>

@@ -448,5 +448,280 @@ footer {
 /*End Drawer Button Animation*/
 
 
+@media screen and (max-width: 1250px) {
+    .sidenav .nav-link {
+        font-size: 2rem;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+  .sidenav .nav-link {
+    font-size: 3rem;
+  }
+
+  .project-card{
+      width: 40%;
+      margin-bottom: 20px;
+  }
+  
+  .video-item {
+      width: 600px;
+  }
+  
+  .collapse{
+      display: flex;
+  }
+  
+  .sidenav {
+      width: 60vw;
+      height: 100vh;
+      position: fixed;
+      transition: all 650ms cubic-bezier(1, 0, 0, 1);
+      z-index: 50;
+      left: -100vw;
+  }
+  
+  .sidenav .nav-link {
+      font-size: 3rem;
+  }
+  
+  .landing-text {
+      margin-left: 0;
+  }
+  
+  .down-button {
+      margin-left: 0;
+  }
+  
+  .video-item {
+      width: 100%;
+  }
+  
+  section {
+      margin-left: 0;
+  }
+  
+  footer {
+      padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .nav-list{
+      flex-direction: column;
+  }
+  
+  .card{
+      flex-grow: 1;
+  }
+  
+  .top-padded{
+      padding-top: 0;
+  }
+  
+  .video-img{
+      width: 45%;
+      margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapse{
+      display: flex;
+  }
+  
+  .section-heading h1{
+      font-size: 3rem;
+  }
+  
+  .section-end h1 {
+      font-size: 3rem;
+  }
+  
+  .project-card{
+      width: 80%;
+      margin-right: 0;
+  }
+  
+  #window {
+      width: 100%;
+      margin-top: 30px;
+  }
+  
+  .video-item h4 {
+      overflow: hidden;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 5; /* number of lines to show */
+     -webkit-box-orient: vertical;
+  }
+  
+  .video-img{
+      width: 50%;
+      margin-bottom: 3rem;
+  }
+  
+  .about {
+      flex-direction: column;
+  }
+  
+  .portrait {
+      text-align: center;
+  }
+  
+  .portrait img {
+      width: 50%;
+  }
+  
+  .folder {
+      width: 100%;
+      max-width: none;
+      text-align: left;
+  }
+  
+  .folder p {
+      display: unset;
+  }
+  
+  .folder i {
+      font-size: 2rem;
+      margin-top: 0;
+  }
+  
+  #content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .sidenav .nav-link {
+        font-size: 2rem;
+    }
+
+  .menu-toggler{
+      top: 2rem;
+      left: 2rem;
+  }
+  
+  .landing-text h1{
+      font-size: 2.5rem;
+  }
+  
+  .landing-text h6{
+      font-size: 1.2rem;
+  }
+  
+  .down-button h5 {
+      font-size: 1.2rem;
+  }
+  
+  .sidenav .nav-link {
+      font-size: 2rem;
+  }
+  
+  .project-section {
+      padding: 2rem;
+  }
+  
+  .section-heading h6 {
+      font-size: 1.6rem;
+  }
+  
+  .content-box{
+      text-align: justify;
+  }
+  
+  .project-heading{
+      margin-bottom: 3rem;
+  }
+  
+  .project-page-intro-text {
+      text-align: justify;
+  }
+  
+  .video-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .video-item h4 {
+      text-align: justify;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  
+  .video-item h4 {
+      overflow: visible;
+     display:block;
+  }
+  
+  .video-item img {
+      width: 70%;
+  }
+  
+  .video-description {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      margin-left: 0;
+  }
+  
+  .video-img{
+      width: 100%;
+      margin-bottom: 3rem;
+  }
+  
+  .section-heading h1{
+      font-size: 2.7rem;
+  }
+  
+  .section-end h1 {
+      font-size: 2.7rem;
+  }
+  
+  .about img {
+      width: 100%;
+  }
+  
+  #sidebar {
+      display: none;
+  }
+  
+  #actions {
+      display: none;
+  }
+  
+  #view {
+      height: 94%;
+  }
+  
+  #content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+  }
+  
+  .folder {
+      width: 100%;
+      max-width: none;
+      text-align: left;
+  }
+  
+  .folder p {
+      display: unset;
+  }
+  
+  .folder i {
+      font-size: 2rem;
+      margin-top: 0;
+  }
+}
+
+/*End Media Rules*/
 

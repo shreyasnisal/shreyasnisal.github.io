@@ -5,13 +5,13 @@ var txt = '<Hi! I am Shreyas />';
 
 var sections = ['home', 'projects', 'programmingvideos', 'about', 'connect']
 
-var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true) {
+var observer = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting === true) {
         if (entries[0]['intersectionRatio'] > 0.2) {
             for (var s in sections) {
-            document.getElementById(sections[s] + '-navitem').classList.remove("selected-navitem");
-        }
-        document.getElementById(entries[0].target.id + "-navitem").classList.add("selected-navitem");
+                document.getElementById(sections[s] + '-navitem').classList.remove("selected-navitem");
+            }
+            document.getElementById(entries[0].target.id + "-navitem").classList.add("selected-navitem");
         }
     }
     else
@@ -38,19 +38,19 @@ function typeWriter() {
 function blinkCursor() {
     if (blink)
         document.getElementById(textId).innerHTML += '_';
-    
+
     blink = (blink + 1) % 2;
-//    setTimeout(blinkCursor, speed);
+    //    setTimeout(blinkCursor, speed);
 }
 
 
-$('.menu-toggler').on('click', function() {
+$('.menu-toggler').on('click', function () {
     $(this).toggleClass('open');
     $('.sidenav').toggleClass('open');
     $(this).toggleClass('not-open')
 });
 
-$('.sidenav .nav-link').on('click', function() {
+$('.sidenav .nav-link').on('click', function () {
     $('.menu-toggler').removeClass('open');
     $('.sidenav').removeClass('open');
 });

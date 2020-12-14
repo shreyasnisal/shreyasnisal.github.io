@@ -3,6 +3,10 @@ body {
     color: 222;
 }
 
+#content {
+    margin-left: 15%;
+}
+
 p {
     color: #eee;
 }
@@ -18,7 +22,8 @@ hr {
 }
 
 .project-heading {
-    width: 98vw;
+    width: 83vw;
+    margin-left: 15%;
     align-items: center
 }
 
@@ -80,7 +85,7 @@ hr {
     flex-direction: row;
     align-items: center;
     width: 30vw;
-    margin-left: 35vw;
+    margin-left: 28vw;
 }
 
 .single-btn-container {
@@ -91,7 +96,7 @@ hr {
     flex-direction: row;
     align-items: center;
     width: 15vw;
-    margin-left: 42vw;
+    margin-left: 34.5vw;
 }
 
 .game-btn-container {
@@ -113,6 +118,11 @@ hr {
     align-items: center;
     width: 25%;
     margin-left: 37.5%;
+}
+
+.menu-subitem#qlogic {
+    font-size: 18px;
+    margin-left: 20%;
 }
 
 .btn-google {
@@ -171,6 +181,12 @@ textarea {
 
 /*Media Rules*/
 
+@media screen and (max-width: 1000px) {
+    #content {
+        margin-left: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
@@ -196,7 +212,7 @@ textarea {
     
     .btn-container {
         width: 40vw;
-        margin-left: 30vw;
+        margin-left: 23vw;
     }
     
     .btn-google img {
@@ -225,12 +241,12 @@ textarea {
     
     .btn-container {
         width: 60vw;
-        margin-left: 20vw;
+        margin-left: 13vw;
     }
     
     .single-btn-container {
         width: 20vw;
-        margin-left: 40vw;
+        margin-left: 33vw;
     }
     
     .project-btn-container {

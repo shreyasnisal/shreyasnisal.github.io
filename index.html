@@ -1,476 +1,527 @@
-<!DocType html>
+<!DOCTYPE html>
 
 <html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="img/landingss.png" />
+		<meta content="Shreyas Nisal" property="og:title">
+		<meta property="og:url" content="https://shreyasnisal.com" />
+		<meta
+			content="Hi, I'm Shreyas! Currently, I’m working as a software engineer at Twilio. Previously, I worked as a Research Intern at MIT Media Lab and Exertion Games Lab. I’m always working on side projects, specially ones focused on play experiences."
+			property="og:description">
+		<meta property="og:type" content="website" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="./img/favicon-16x16.png" />
+		<title>Shreyas Nisal</title>
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="img/landingss.png" />
-    <meta content="Shreyas Nisal" property="og:title">
-    <meta property="og:url" content="https://www.shreyasnisal.com" />
-    <meta
-        content="Hi, I am Shreyas! I am an undergraduate student at BITS Pilani- Goa, pursuing a double major in Computer Science and Physics."
-        property="og:description">
-    <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="shortcut icon" type="image/png" href="./img/favicon-16x16.png" />
-    <title>Shreyas Nisal</title>
-</head>
+	<body>
+		<div id="preloader-container">
+			<img src="img/preloader.gif" />
+		</div>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="#">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="#">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="#" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="projects-navitem" href="#projects" class="nav-link">Projects</a>
+				</li>
+				<li>
+					<a id="youtube-navitem" href="#youtube" class="nav-link">YouTube</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="#about" class="nav-link">About</a>
+				</li>
+				<li>
+					<a id="experience-navitem" href="#experience" class="nav-link">Experience</a>
+				</li>
+				<li>
+					<a id="publications-navitem" href="#publications" class="nav-link">Publications</a>
+				</li>
+				<li>
+					<a href="resume/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+			</ul>
+		</nav>
+		<div class = "container">
+			<div class = "landing" id="landing">
+				<h1>I’m Shreyas</h1>
+				<h2>I use technology for creative projects.</h2>
+				<h3>
+					Currently, I’m working as a software engineer at Twilio. Previously, I worked as a Research Intern at MIT Media Lab and Exertion Games Lab. I’m always working on side projects, specially ones focused on play experiences.
+				</h3>
+				<p id = "contact">
+					I reply fastest on email: <a target="_blank" href="mailto:shreyasnisal@gmail.com">shreyasnisal@gmail.com</a>
+				</p>
+			</div>
 
-<body>
-    <div class="menu-toggler collapse not-open">
-        <div class="bar start"></div>
-        <div class="bar mid"></div>
-        <div class="bar end"></div>
-    </div>
-    <div class="sidenav">
-        <a id="home-navitem" class="nav-link" href="#">Home</a>
-        <a id="projects-navitem" class="nav-link" href="#projects">Projects</a>
-        <a id="programmingvideos-navitem" class="nav-link" href="#programmingvideos">Programming Videos</a>
-        <a id="about-navitem" class="nav-link" href="#about">About</a>
-        <a id="connect-navitem" class="nav-link" href="#connect">Connect</a>
-        <hr>
-        <a target="_blank" href="resume/Resume_ShreyasNisal.pdf" class="nav-link">R&eacute;sum&eacute;</a>
-    </div>
-    <header id="home">
-        <div class="landing-text">
-            <h1 id="typeText"></h1>
-            <h6 id="typeText2">A Computer Science undergrad at BITS Goa</h6>
-            <h6 id="typeText3">Mobile App | Game | Web Developer</h6>
-        </div>
-        <a href="#projects" class="down-button">
-            <h5>View my Projects</h5>
-            <i id="down-icon" class="fas fa-chevron-down"></i>
-        </a>
-    </header>
+			<div class="section" id="projects">
+				<h2>Projects</h2>
 
-    <section id="projects">
-        <div class="container">
-            <div class="section-heading">
-                <h1>&lt;Projects&gt;</h1>
-            </div>
+				<div class="project">
+					<img src="img/qlogic.png" alt="QLogic" />
+					<div class="project-description">
+							<h3>QLogic</h3>
+							<p>A puzzle game created as a fun tool to learn quantum computing. It consists of puzzles based on quantum logic gates, simulated on a mobile device.</p>
+							<p class="technologies">React Native</p>
+							<div class="links">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=com.paltangames.qlogic">
+									<i class="fab fa-google-play link-icon"></i>
+								</a>
+							</div>
+					</div>
+				</div>
 
-            <div class="project-items">
+				<div class="project">
+					<img src="img/speechprogrammer.jpg" alt="Speech Programmer" />
+					<div class="project-description">
+							<h3>Speech Programmer</h3>
+							<p>An open-source project that I started, this is a web-platform that can write C code using voice commands. It handles basic functionality of the language and ensures syntactically correct code.</p>
+							<p class="technologies">HTML/CSS/JS | Web Speech API</p>
+							<div class="links">
+								<a target="_blank" class="material-icons link-icon" href="https://shreyasnisal.com/SpeechProgrammer/">open_in_new</a>
+								<a target="_blank" href="https://github.com/shreyasnisal/SpeechProgrammer">
+									<i class="fab fa-github link-icon"></i>
+								</a>
+								<a target="_blank" href="https://youtu.be/wVmPpP95EgM?list=PLImMVrOC3KFk9j9dwIzo5iv-_yTX4zHVj">
+									<i class="fab fa-youtube link-icon"></i>
+								</a>
+							</div>
+					</div>
+				</div>
 
-                <!--QLogic-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.paltangames.qlogic"
-                            class="link"><u>G</u>oogle Play</a>
-                    </div>
-                    <a href="qlogic.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;QLogic&rdquo;,</p>
-                        <p class="line2">&ldquo;React Native&rdquo;,</p>
-                        <p class="line3">&ldquo;A quantum computing puzzle game&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
+				<div class="project">
+					<img src="img/mednetoutreach.webp" alt="Mednet Outreach" />
+					<div class="project-description">
+							<h3>Mednet Outreach</h3>
+							<p>A remote consultation platform for doctors, built with the team at Mednet Labs. I contributed to the development of the React Native app for doctors, and for integrating video calling in all apps.</p>
+							<p class="technologies">React Native | Twilio Video API</p>
+							<div class="links">
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=com.mednetlabs.android.teledoctor">
+									<i class="fab fa-google-play link-icon"></i>
+								</a>
+								<a target="_blank" href="https://apps.apple.com/in/app/mednet-outreach/id1508214921">
+									<i class="fab fa-app-store link-icon"></i>
+								</a>
+							</div>
+					</div>
+				</div>
 
-                <!--SpeechProgrammer-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                    </div>
-                    <a target="_blank" href="https://www.shreyasnisal.com/SpeechProgrammer/" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;Speech Programmer&rdquo;,</p>
-                        <p class="line2">&ldquo;HTML | CSS | JavaScript | Web Speech API&rdquo;,</p>
-                        <p class="line3">&ldquo;A platform to write code from voice commands&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
+				<div class="project">
+					<img src="img/blindfold.jpg" alt="Blindfold graphic image" />
+					<div class="project-description">
+							<h3>Blindfold</h3>
+							<p>A game based on auditory feedback and rhythm rather than visual feedback.</p>
+							<p class="technologies">Unity</p>
+							<div class="links">
+								<a  target="_blank" href="https://play.google.com/store/apps/details?id=com.Paltan.Blindfold">
+									<i class="fab fa-google-play link-icon"></i>
+								</a>
+							</div>
+					</div>
+				</div>
 
-                <!--MedNet OutReach-->
-                <div href="mednet-outreach.html" class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <a target="_blank"
-                            href="https://play.google.com/store/apps/details?id=com.mednetlabs.android.teledoctor&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                            class="link"><u>G</u>oogle Play</a>
-                        <a target="_blank" href="https://apps.apple.com/in/app/mednet-outreach/id1508214921"
-                            class="link"><u>A</u>pple Store</a>
-                    </div>
-                    <a href="mednet-outreach.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;MedNet Outreach&rdquo;,</p>
-                        <p class="line2">&ldquo;React Native | Twilio&rdquo;,</p>
-                        <p class="line3">&ldquo;A remote consultation app for doctors&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4 cursor-animation">_</span></p>
-                    </a>
-                </div>
+				<div class="project">
+					<img src="img/voicequiz.jpg" alt="Voicequiz" />
+					<div class="project-description">
+							<h3>Voice Quiz</h3>
+							<p>A quiz app that can be played using voice only. The app reads out questions, can be requested to read out options, and accepts spoken answers.</p>
+							<p class="technologies">React Native</p>
+							<div class="links">
+								<a target="_blank" href="https://youtu.be/wvW8U_GE-4Q?list=PLImMVrOC3KFk9j9dwIzo5iv-_yTX4zHVj">
+									<i class="fab fa-youtube link-icon"></i>
+								</a>
+							</div>
+					</div>
+				</div>
+				<div class="project-archive-link">
+					<p>View Project Archive</p>
+					<i class="fas fa-chevron-down" style="margin-top: 1px; margin-left: 5px; color: #828282"></i>
+				</div>
+			</div>
 
-                <!--VTalk-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.onetyme.talk"
-                            class="link"><u>G</u>oogle Play</a>
-                    </div>
-                    <a href="vtalk.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;VTalk&rdquo;,</p>
-                        <p class="line2">&ldquo;React Native | Firebase | SQLite&rdquo;,</p>
-                        <p class="line3">&ldquo;A communication app for the deaf&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
+			<div class="section hidden" id="project-archive">
+				<h2>Archive</h2>
 
-                <!--Android Games-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <a target="_blank" href="https://play.google.com/store/apps/developer?id=Paltan+Games"
-                            class="link"><u>G</u>oogle Play</a>
-                    </div>
-                    <a href="android-games.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;Android Games&rdquo;,</p>
-                        <p class="line2">&ldquo;Unity3D | C#&rdquo;,</p>
-                        <p class="line3">&ldquo;Hyper-casual games with unique ideas&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
+				<div class="project-archive">
+					<div class="table-headings">
+						<h3 class="archive-project-year">Year</h3>
+						<h3>Title</h3>
+						<h3 class="archive-project-description">Description</h3>
+						<h3 class="archive-project-technologies">Technologies</h3>
+						<h3 class="archive-project-links">Link</h3>
+					</div>
 
-                <!--React Native Projects-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <!--                            <a href="#" class="link">GitHub</a>-->
-                    </div>
-                    <a href="react-native.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;React Native Projects&rdquo;,</p>
-                        <p class="line2">&ldquo;React Native&rdquo;,</p>
-                        <p class="line3">&ldquo;Mobile apps with JavaScript&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
+					<div class="archive-project">
+						<p class="archive-project-year">2022</p>
+						<p>Flask Remote</p>
+						<p class="archive-project-description">With the aim of having control over a computer from a mobile, I decided to build a simple remote myself rather than integrating existing remote apps. The code involes communication over a local network and allows simple functionality especially useful for presentations and media.</p>
+						<p class="archive-project-technologies">Python (Flask), React Native</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://github.com/shreyasnisal/flask-remote">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
-                <!--Flutter Projects-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <!--                            <a href="#" class="link">GitHub</a>-->
-                    </div>
-                    <a href="flutter.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;Flutter Projects&rdquo;,</p>
-                        <p class="line2">&ldquo;Flutter&rdquo;,</p>
-                        <p class="line3">&ldquo;Google's mobile app dev framework&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
+					<div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>VChat</p>
+						<p class="archive-project-description">A chat app that I developed to learn Flutter. The app uses the Firebase Realtime Database for its back end, displays the date and time with each message, and allows the creation of groups.</p>
+						<p class="archive-project-technologies">Flutter, Firebase Authentication, Firebase Realtime Database</p>
+						<p class="archive-project-links">
+							<a target="_blank" target="_blank" href="https://github.com/shreyasnisal/VChat">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
-                <!--Java Projects-->
-                <div class="project-card">
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                        <!--                            <a href="https://github.com/shreyasnisal/JPad" class="link">GitHub</a>-->
-                    </div>
-                    <a href="java-projects.html" class="fakeScreen">
-                        <p class="line1">&#91;&nbsp;&ldquo;Java Graphics Projects&rdquo;,</p>
-                        <p class="line2">&ldquo;Java | Swing | AWT&rdquo;,</p>
-                        <p class="line3">&ldquo;GUI projects with Swing and AWT&rdquo;&nbsp;&#93;</p>
-                        <p class="line4">>open<span class="cursor4">_</span></p>
-                    </a>
-                </div>
-            </div>
-            <div class="section-end">
-                <h1>&lt;/Projects&gt;</h1>
-            </div>
-        </div>
-    </section>
+					<div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>JPad</p>
+						<p class="archive-project-description">I created my own simple text editor using Java Swing and AWT. The text editor allows multiple windows, saving/opening files, different fonts, formatting and font sizes, and undo/redo operations.</p>
+						<p class="archive-project-technologies">Java (Swing, AWT)</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://github.com/shreyasnisal/JPad">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
+					<!-- <div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>VTalk</p>
+						<p class="archive-project-description">A mobile app to facilitate communication between hearing-impaired people and people who do not know Sign Language. Communication is facilitated through text-to-speech and speech-to-text on the app.</p>
+						<p class="archive-project-technologies">React Native, Firebase, SQLite</p>
+						<p class="archive-project-links"><a href="https://github.com/shreyasnisal/flask-remote"><i class="fab fa-github"></i></a></p>
+					</div> -->
 
-    <section id="programmingvideos">
-        <div class="container">
-            <div class="section-heading">
-                <h1>&lt;Programming Videos&gt;</h1>
-                <h6>&lt;Created E-Learning Tutorials /&gt;</h6>
-            </div>
-            <div class="browser-window">
-                <div class="row">
-                    <div class="column left">
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                    </div>
-                    <div class="column middle">
-                        <a target="_blank" href="https://www.youtube.com/channel/UCC6h00ZhODFCUQAT1BVEKHg"><input
-                                type="text" readonly
-                                value="https://www.youtube.com/channel/UCC6h00ZhODFCUQAT1BVEKHg"></a>
-                    </div>
-                </div>
+					<div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>Brick Breaker</p>
+						<p class="archive-project-description">A simple brick breaker game I developed to learn about developing games using Java Swing and AWT.</p>
+						<p class="archive-project-technologies">Java (Swing, AWT)</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://github.com/shreyasnisal/BrickBreaker">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
-                <div class="browser-content">
+					<div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>Snake</p>
+						<p class="archive-project-description">I took on the project of developing a simple, retro snake game as a challenge to develop a game using Java Swing and AWT without online help other than the official documentation.</p>
+						<p class="archive-project-technologies">Java (Swing, AWT)</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://github.com/shreyasnisal/Snake-Game">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=zWFtAVWsj58&list=PLImMVrOC3KFkFtmjdkdpjoO_tWYWCM1fg"
-                        class="video-item">
-                        <img src=img/gamedev.png />
-                        <div class="video-description">
-                            <h3>Game Development</h3>
-                            <h4>Since I've been passionate about developing games for a long time, I decided to make a game development series with Unity3D. 
-                                I start with one of my favorite games to develop for learning, the brick breaker game.</h4>
-                        </div>
-                    </a>
+					<div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>Photo Journal</p>
+						<p class="archive-project-description">This mobile app is a photo vault to store photos with a caption and the date and time. It uses the Firebase Storage and the Realtime Database for its backend.</p>
+						<p class="archive-project-technologies">Flutter, Firebase Authentication, Firebase Realtime Database, Firebase Storage</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://github.com/shreyasnisal/Photo-Journal">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=2hNqBq8HQkw&list=PLImMVrOC3KFn0US0AiW0JYLaU8mCtrqG0"
-                        class="video-item">
-                        <img src=img/compilers.png />
-                        <div class="video-description">
-                            <h3>Compilers</h3>
-                            <h4>This series revolves around the Compilers course, another important computer science course. 
-                                It builds up on the course on Automata Theory, and covers concepts such as lexical analysis and parsing</h4>
-                        </div>
-                    </a>
+					<div class="archive-project">
+						<p class="archive-project-year">2019</p>
+						<p>Chat App</p>
+						<p class="archive-project-description">I wanted to develop an end-to-end chat app without using existing services for the back end. This simple chat app developed using React Native for the front end and Java (Spring) and MySQL for the back end helped me learn a lot about these technologies and about developing the front and back end of applications.</p>
+						<p class="archive-project-technologies">React Native, Java (Spring), MySQL</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://github.com/shreyasnisal/Chat-App">
+								<i class="fab fa-github"></i>
+							</a>
+						</p>
+					</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=CXg7wJRstoE&list=PLImMVrOC3KFl3AGLNp_u8V0yLeDCpMfgh"
-                        class="video-item">
-                        <img src=img/2048.png />
-                        <div class="video-description">
-                            <h3>2048 Game in React Native Windows</h3>
-                            <h4>A tutorial series on creating a 2048 game with React Native, with a focus on developing
-                                it as a windows native application.</h4>
-                        </div>
-                    </a>
+					<div class="archive-project">
+						<p class="archive-project-year">2018</p>
+						<p>Double Bounce</p>
+						<p class="archive-project-description">Based on my first game idea, this game combines the concept of a brick breaker game and the arcade Pong game to let users control two paddles simultaneously and keep a ball bouncing between them. The difficulty increases when one of the paddles moves in the opposite direction as the mobile phone’s tilt.</p>
+						<p class="archive-project-technologies">Unity</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://play.google.com/store/apps/details?id=com.Paltan.DoubleBounce">
+								<i class="fab fa-google-play"></i>
+							</a>
+						</p>
+					</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=lpCa1kKJjOY&list=PLImMVrOC3KFluGZch12h_4Q0HBiALxSwH"
-                        class="video-item">
-                        <img src=img/RN_windows.png />
-                        <div class="video-description">
-                            <h3>React Native Windows</h3>
-                            <h4>In the beginning of 2020, Microsoft announced React Native support for developing
-                                Windows and MacOS native applications. This series talks about setting up React Native
-                                to develop windows native apps.</h4>
-                        </div>
-                    </a>
+					<div class="archive-project">
+						<p class="archive-project-year">2018</p>
+						<p>Rockets</p>
+						<p class="archive-project-description">An infinite game where players destroy incoming planes using missiles, which includes power-up rockets such as a homing missile and a blast-all missile.</p>
+						<p class="archive-project-technologies">Unity</p>
+						<p class="archive-project-links">
+							<a target="_blank" href="https://play.google.com/store/apps/details?id=com.paltan.rockets">
+								<i class="fab fa-google-play"></i>
+							</a>
+						</p>
+					</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=0lZrwGadtUA&list=PLImMVrOC3KFmvjrXJWV4HS_GyXiEIhAXR"
-                        class="video-item">
-                        <img src=img/ToC.png />
-                        <div class="video-description">
-                            <h3>Theory of Computation</h3>
-                            <h4>This series revolves around Theory of Computation (Automata Theory), which is an
-                                essential course which builds up to compiler construction. It covers regular languages,
-                                finite automata, context-free languages, pushdown automata and turing machines.</h4>
-                        </div>
-                    </a>
+					<!-- <div class="archive-project">
+						<p class="archive-project-year">2017</p>
+						<p>Chocoburst VR</p>
+						<p class="archive-project-description">Developing a VR game for Google Cardboard presented the constraint of a single input, given through a magnet on the cardboard headset. I developed a first person VR shooter where the player shoots to destroy chocolate balls hurling towards them..</p>
+						<p class="archive-project-technologies">Unity</p>
+						<p class="archive-project-links"><a href="https://github.com/shreyasnisal/flask-remote"><i class="fab fa-github"></i></a></p>
+					</div> -->
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=iowXYGqdtn0&list=PLImMVrOC3KFm046NbgDfFvyXbgbaf37RS"
-                        class="video-item">
-                        <img src=img/verilog.png />
-                        <div class="video-description">
-                            <h3>Verilog Basics</h3>
-                            <h4>Verilog is a Hardware Description Language (HDL) used to model electronic circuits.
-                                Verilog is an essential component of the Digital Design course as well as the Computer
-                                Architecture course. Most sources on verilog start directly with writing half-adder or
-                                full-adder modules. This series tries to lay out the basics of verilog, how some of the
-                                most common keywords work, and a brief introduction to the verilog syntax.</h4>
-                        </div>
-                    </a>
+				</div>
+			</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=N9-bkzK6zJg&list=PLImMVrOC3KFk90386VAASbXlSDahewOdr"
-                        class="video-item">
-                        <img src=img/DBMS.png />
-                        <div class="video-description">
-                            <h3>Database Management Systems</h3>
-                            <h4>The series is centered around the relational model for database management, and SQL. It
-                                covers the theory concerning relational algebra and SQL, and has hands-on programming
-                                videos with MySQL.</h4>
-                        </div>
-                    </a>
+			<div class="section" id="youtube">
+				<h2>YouTube Tutorials</h2>
+				<p class="section-description">
+					I create YouTube tutorials for fellow programmers to learn new concepts and technologies. Here are the video series I have created till date.
+				</p>
+				<div class="youtube-videos">
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=2hNqBq8HQkw&list=PLImMVrOC3KFn0US0AiW0JYLaU8mCtrqG0">
+						<img src="img/compilers.png" alt="compilers thumbnail">
+					</a>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=yEfOIrWltIM&list=PLImMVrOC3KFko9RmEzuAZUbqSYoDRq69e"
-                        class="video-item">
-                        <img src=img/ComputerProgramming.png />
-                        <div class="video-description">
-                            <h3>Computer Programming (Linux + C Programming)</h3>
-                            <h4>A playlist that is best suited to first year engineering students or anyone starting off
-                                in the programming world. It covers the basics of the linux shell, and then the concepts
-                                of C programming. This was used as official learning material for students during the
-                                Spring 2020 semester, when I was a teaching assistant for the course.</h4>
-                        </div>
-                    </a>
+					<a target="_blank" href="https://www.youtube.com/watch?v=0lZrwGadtUA&list=PLImMVrOC3KFmvjrXJWV4HS_GyXiEIhAXR">
+						<img src="img/ToC.png" alt="theory of computation thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=CXg7wJRstoE&list=PLImMVrOC3KFl3AGLNp_u8V0yLeDCpMfgh">
+						<img src="img/2048.png" alt="2048 react native windows thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=lpCa1kKJjOY&list=PLImMVrOC3KFluGZch12h_4Q0HBiALxSwH">
+						<img src="img/RN_windows.png" alt="react native windows thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=iowXYGqdtn0&list=PLImMVrOC3KFm046NbgDfFvyXbgbaf37RS">
+						<img src="img/verilog.png" alt="verilog thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=zWFtAVWsj58&list=PLImMVrOC3KFkFtmjdkdpjoO_tWYWCM1fg">
+						<img src="img/gamedev.png" alt="game development thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=yEfOIrWltIM&list=PLImMVrOC3KFko9RmEzuAZUbqSYoDRq69e">
+						<img src="img/ComputerProgramming.png" alt="computer programming thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=YCrtLtsulu0&list=PLImMVrOC3KFkc2bQCNyq4Yp1Pq00lAAeH">
+						<img src="img/ObjectOrientedProgramming.png" alt="object oriented programming thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=DhPOA3kGYrs&list=PLImMVrOC3KFk90386VAASbXlSDahewOdr">
+						<img src="img/DBMS.png" alt="database management thumbnail">
+					</a>
+					
+					<a target="_blank" href="https://www.youtube.com/watch?v=GR5E9-K1738&list=PLImMVrOC3KFn5XFGto_bORo_f8W9rZW1X">
+						<img src="img/Python.png" alt="python thumbnail">
+					</a>
+				</div>
+			</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=GR5E9-K1738&list=PLImMVrOC3KFn5XFGto_bORo_f8W9rZW1X"
-                        class="video-item">
-                        <img src=img/Python%20Programming.png />
-                        <div class="video-description">
-                            <h3>Python Programming</h3>
-                            <h4>This is playlist for anyone wanting to learn python, be it someone with programming
-                                experience or someone choosing python as their first language. Requested by a professor
-                                for an embedded systems course for Masters students. The videos are based on material
-                                from the lecture slides provided to me.</h4>
-                        </div>
-                    </a>
+			<div class="section" id="about">
+				<h2>Hi, I'm Shreyas</h2>
+				<div class="about">
+					<img src="img/shreyas.jpg" />
+					<div class="about-text">
+						<p>I’m currently a <b>software engineer</b> at <b>Twilio</b>, and have previously worked as a <b>Research Intern</b> at <b>MIT Media Lab</b> (Fluid Interfaces) and <b>Exertion Games Lab</b> (Monash University). I’ve also interned at <b>Twilio</b>, <b>Mednet Labs</b> and <b>BitHyve</b>, and have a B.E. in <b>Computer Science</b> and an M.Sc. in <b>Physics</b> from <b>BITS Goa</b>.</p>
+						<br>
+						<p>I’m constantly working on personal projects, exploring <b>technology for creative applications</b>, with a special focus on <b>play experiences</b>. I’ve developed many games, mobile apps and web apps, some of which are on the <b>Google Play Store</b> or hosted online. I also create content on <b>YouTube</b>, teaching programming content and talking about my projects and experiences.</p>
+						<br>
+						<p>Recently, I’ve developed an interest in exploring the interactions between humans and technology, especially <b>how emerging technologies can better facilitate playful experiences</b> with a purpose beyond entertainment. If you want to discuss anything code, or just want to say hello, drop me an email. I’d love to connect! 🧑‍💻</p>
+						<br>
+						<p>I reply fastest on email: <a href="mailto:shreyasnisal@gmail.com">shreyasnisal@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
 
-                    <a target="_blank"
-                        href="https://www.youtube.com/watch?v=YCrtLtsulu0&list=PLImMVrOC3KFkc2bQCNyq4Yp1Pq00lAAeH"
-                        class="video-item">
-                        <img src=img/ObjectOrientedProgramming.png />
-                        <div class="video-description">
-                            <h3>Object Oriented Programming with Java</h3>
-                            <h4>This 40-video playlist covers concepts of OOP, including the basics of Unified Modelling
-                                Language (UML) diagrams using StarUML, and concepts of the Java language.</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="section-end">
-                <h1>&lt;/Programming Videos&gt;</h1>
-            </div>
-        </div>
-    </section>
+			<div class="section" id="experience">
+				<h2>Experience</h2>
+				<div class="experience">
+					<img src="img/twilio.png" class="experience-logo experience-twilio-logo" />
+					<div class="experience-details">
+						<p class="date">Aug 2022 - Present</p>
+						<p class="organization">Twilio</p>
+						<p class="role">Software Engineer</p>
+					</div>
+					<div class="experience-description">
+						<p>I’m working as a software engineer at Twilio India on the Auth team, where we develop tools and APIs for the Role-Based Access Control platform, which can be integrated into Twilio products.</p>
+						<p class="experience-technologies">
+							Java (Vaadin, Dropwizard)
+						</p>
+					</div>
+				</div>
+				<div class="experience">
+					<img src="img/medialab.png" class="experience-logo" />
+					<div class="experience-details">
+						<p class="date">Feb 2022 - July 2022</p>
+						<p class="organization">MIT Media Lab (Fluid Interfaces)</p>
+						<p class="role">Research Intern</p>
+					</div>
+					<div class="experience-description">
+						<p>Working on the KALM project, I contributed to the study of a neurofeedback training protocol for anxiety management using an electroencephalography (EEG) based Affective Brain-Computer Interface (aBCI). I was involved in the design and development of the protocol, running participant studies as well as literature review and writing work for this research.</p>
+						<p class="experience-technologies">
+							Neuroelectrics Instrument Controller (NIC2) | Python | MNE | Unity | Empatica E4 |  Psychopy | LabRecorder
+						</p>
+					</div>
+				</div>
+				<div class="experience">
+					<img src="img/xgl.png" class="experience-logo" />
+					<div class="experience-details">
+						<p class="date">Aug 2021 - Jan 2022</p>
+						<p class="organization">Exertion Games Lab</p>
+						<p class="role">Research Intern</p>
+					</div>
+					<div class="experience-description">
+						<p>I worked on the design and development of social bodily games involving physical touch using Electrical Muscle Stimulation (EMS), a body actuating technology. I ran an independent pilot study that included brainstorming ideas for games, designing and prototyping these game systems, running participant trials, performing a literature review, and writing a short paper.</p>
+						<p class="experience-technologies">
+							Arduino | React Native | Unity
+						</p>
+					</div>
+				</div>
+				<div class="experience">
+					<img src="img/twilio.png" class="experience-logo experience-twilio-logo" />
+					<div class="experience-details">
+						<p class="date">Jun 2021 - Jul 2021</p>
+						<p class="organization">Twilio</p>
+						<p class="role">Software Engineering Intern</p>
+					</div>
+					<div class="experience-description">
+						<p>I contributed to the Role-Based Access Control (RBAC) platform by developing front-end modules as well as API endpoints for the Access Manager Service (XMS).</p>
+						<p class="experience-technologies">
+							Java (Vaadin, Dropwizard)
+						</p>
+					</div>
+				</div>
+				<div class="experience">
+					<img src="img/bithyve.png" class="experience-logo" />
+					<div class="experience-details">
+						<p class="date">May 2020 - July 2020</p>
+						<p class="organization">BitHyve</p>
+						<p class="role">React Native Intern</p>
+					</div>
+					<div class="experience-description">
+						<p>I worked as a React Native intern at BitHyve, working on their Hexa Bitcoin Wallet app, where I contributed to the app’s UI and front-end functionality.</p>
+						<p class="experience-technologies">
+							React Native
+						</p>
+					</div>
+				</div>
+				<div class="experience">
+					<img src="img/mednetlabs.png" class="experience-logo" />
+					<div class="experience-details">
+						<p class="date">Dec 2018 - May 2019</p>
+						<p class="organization">Mednet Labs</p>
+						<p class="role">Full-Stack Development Intern</p>
+					</div>
+					<div class="experience-description">
+						<p>During my semester at college, I worked on two healthcare-based React Native apps with Mednet Labs. I also developed web-based modules for self-registration kiosks at hospitals.</p>
+						<p class="experience-technologies">
+							React Native | Spring
+						</p>
+					</div>
+				</div>
+				<div class="experience">
+					<img src="img/mednetlabs.png" class="experience-logo" />
+					<div class="experience-details">
+						<p class="date">May 2018 - Jun 2018</p>
+						<p class="organization">Mednet Labs</p>
+						<p class="role">Full-Stack Development Intern</p>
+					</div>
+					<div class="experience-description">
+						<p>I worked with Mednet Labs to develop a voice-assistant for hands-free filling of medical examination forms for doctors. The platform allowed doctors to customize the examination form and train the module to recognize medical terms. I also collected feedback from doctors on the use of this platform to improve it for real-world applications.</p>
+						<p class="experience-technologies">
+							HTML/CSS/JS | MySQL | Java (Spring) | Web Speech API
+						</p>
+					</div>
+				</div>
+			</div>
 
-    <section id="about">
-        <div class="container">
-            <div class="section-heading">
-                <h1>&lt;About&gt;</h1>
-            </div>
-            <div class="about">
-                <div class="portrait">
-                    <img src="img/Shreyas1.jpg">
-                </div>
-                <div id="window">
-                    <div id="buttons">
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                    </div>
-                    <div id="textarea"><p>I’m a Research Intern at <b>MIT Media Lab</b>, working on Affective Brain-Computer Interfaces (aBCI) with the <b>Fluid Interfaces</b> group led by Prof Pattie Maes. 
-                        I’ve previously explored Electrical Muscle Stimulation (EMS) in Human-Computer Interaction (HCI) working with the <b>Exertion Games Lab at Monash University</b> under
-                         Prof Florian ‘Floyd’ Mueller. I’ve also been a software development intern at <b>Twilio</b>, <b>BitHyve</b> and <b>Mednet Labs</b>, and have experience with various Java frameworks and React Native.
-                          I’m a final year student at the <b>Birla Institute of Technology and Science, Goa Campus</b>, pursuing a B.E. in <b>Computer Science</b> and an M.Sc. in <b>Physics</b>.</p>
-                        <br><br>
-                        <p>I enjoy taking up personal projects, especially in web, mobile app and game development. I use React Native, Flutter and Unity, and have published some apps and games to the Google Play Store.
-                             I also enjoy creating content to give back to the development community, and have a YouTube channel where I share videos related to computer science and coding.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="section-end">
-                <h1>&lt;/About&gt;</h1>
-            </div>
-        </div>
-    </section>
+			<div class="section" id="publications">
+				<h2>Publications and Talks</h2>
+				<div class="publications">
+					<div class="publication">
+						<p class="publication-venue"><b>CHIPlay 2022</b> Extended Abstracts (Work-in-Progress track)</p>
+						<p>TouchMate: Understanding the Design of Body Actuating Games using Physical Touch</p>
+					</div>
+					<div class="publication">
+						<p class="publication-venue"><b>AOICON 2021</b> 72nd Annual Conference of the Association of Otolaryngologists of India</p>
+						<p>VTalk, An app for the Deaf</p>
+					</div>
+					<div class="publication">
+						<p class="publication-venue"><b>QTalks</b> about Quantum Games by QTurkey and QWorld</p>
+						<p>Gamifying Quantum Computation</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <section id="connect">
-        <div class="container">
-            <div class="section-heading">
-                <h1>&lt;Connect&gt;</h1>
-            </div>
-            <div id='finder'>
-                <div id='toolbar'>
-                    <div id='traffic-light'>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                    </div>
-                    <div id='windowname'>
-                        <i></i>
-                        Get in touch or follow my work
-                    </div>
-                </div>
-                <div id='view'>
-                    <div id='sidebar'>
-                        <ul>
-                            <li>
-                                <span class='group'>
-                                    Connect
-                                </span>
-                                <ul>
-                                    <li><a target="_blank" href="mailto:shreyasnisal@gmail.com">Email</a></li>
-                                    <li><a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">LinkedIn</a>
-                                    </li>
-                                    <li><a target="_blank" href="https://twitter.com/shreyas_nisal">Twitter</a></li>
-                                    <li><a target="_blank" href="https://github.com/shreyasnisal">GitHub</a></li>
-                                    <li><a target="_blank"
-                                            href="https://www.youtube.com/channel/UCC6h00ZhODFCUQAT1BVEKHg">YouTube</a>
-                                    </li>
-                                    <li><a target="_blank" href="https://medium.com/@shreyasnisal">Medium</a></li>
-                                    <!-- <li><a target="_blank" href="http://blog.shreyasnisal.com">WordPress</a></li> -->
-                                    <li><a target="_blank" href="https://nisalshreyas.wordpress.com/">WordPress</a></li>
-                                    <!-- <li><a target="_blank" href="https://shreyasnisal.blogspot.com/">Blogger</a></li> -->
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id='content'>
-                        <a target="_blank" href="mailto:shreyasnisal@gmail.com" class='folder'>
-                            <i class="fas fa-envelope"></i>
-                            <p class="file-name">Email</p>
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/" class='folder'>
-                            <i class="fab fa-linkedin"></i>
-                            <p class="file-name">LinkedIn</p>
-                        </a>
-                        <a target="_blank" href="https://twitter.com/shreyas_nisal" class='folder'>
-                            <i class="fab fa-twitter-square"></i>
-                            <p class="file-name">Twitter</p>
-                        </a>
-                        <a target="_blank" href="https://github.com/shreyasnisal" class='folder'>
-                            <i class="fab fa-github-square"></i>
-                            <p class="file-name">GitHub</p>
-                        </a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCC6h00ZhODFCUQAT1BVEKHg"
-                            class='folder'>
-                            <i class="fab fa-youtube-square"></i>
-                            <p class="file-name">YouTube</p>
-                        </a>
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
 
-                        <a target="_blank" href="https://medium.com/@shreyasnisal" class='folder'>
-                            <i class="fab fa-medium"></i>
-                            <p class="file-name">Medium</p>
-                        </a>
-                        <!-- <a target="_blank" href="http://blog.shreyasnisal.com" class='folder'>
-                            <i class="fab fa-wordpress"></i>
-                            <p class="file-name">WordPress&#13;&#10;(NisalNet)</p>
-                        </a> -->
-                        <a target="_blank" href="https://nisalshreyas.wordpress.com/" class='folder'>
-                            <i class="fab fa-wordpress"></i>
-                            <p class="file-name">WordPress (Poetry)</p>
-                        </a>
-                        <!-- <a target="_blank" href="https://shreyasnisal.blogspot.com/" class='folder'>
-                            <i class="fab fa-blogger"></i>
-                            <p class="file-name">Blogger (Codify)</p>
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="section-end">
-                <h1>&lt;/Connect&gt;</h1>
-            </div>
-        </div>
-    </section>
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
 
-    <footer>
-        <div class="footer-container">
-            <p><b class="copywright">&copy;</b>2020 Shreyas Nisal</p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/homepage.js"></script>
-</body>
+				<a target="_blank" href="https://shreyasnisal.medium.com/">
+					<i class="fab fa-medium"></i>
+				</a>
 
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+				<a target="_blank" href="https://twitter.com/shreyas_nisal">
+					<i class="fab fa-twitter"></i>
+				</a>
+				
+				<a target="_blank" href="https://www.instagram.com/nisalcodes/">
+					<i class="fab fa-instagram"></i>
+				</a>
+				
+				<a target="_blank" href="https://nisalshreyas.wordpress.com/">
+					<i class="fab fa-wordpress"></i>
+				</a>
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>

@@ -82,6 +82,10 @@ a:hover {
 	align-items: flex-end;
 }
 
+.material-symbols-outlined {
+	vertical-align: middle;
+}
+
 /* END COMMON */
 
 /* PRELOADER */
@@ -220,7 +224,8 @@ a:hover {
 /* LANDING */
 
 .landing-redirect-button {
-	background-color: #2F80ED;
+	/* background-color: #2F80ED; */
+	background-color: #9B51E0;
 	border-width: 0;
 	border-radius: 0.5em;
 	width: 300px;

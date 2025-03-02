@@ -1,5 +1,5 @@
 
-const sections = ['landing', 'projects', 'youtube', 'about', 'experience', 'publications']
+const sections = ['landing', 'youtube', 'about', 'experience', 'publications']
 
 const observer = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
@@ -17,7 +17,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, { threshold: [0, 0.2] });
 
 observer.observe(document.querySelector("#landing"));
-observer.observe(document.querySelector("#projects"));
+// observer.observe(document.querySelector("#projects"));
 observer.observe(document.querySelector("#youtube"));
 observer.observe(document.querySelector("#about"));
 observer.observe(document.querySelector("#experience"));

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/ReyWebEngine/Protogame3D.png" />
+		<meta content="Shreyas Nisal: JS Game Engine" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<!-- EnlighterJS Resources !-->
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.min.css" />
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.dracula.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>JS Game Engine: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="container">
+			<div class="project-landing">
+				<h1>Rey Web Engine</h1>
+				<img width="100%" src="../../img/ReyWebEngine/ReyWebEngine.gif">
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+                        <p>I'm always excited about making things for the web owing to the ease of sharing these and letting anyone try out cool applications directly in their browser, so I recreated my game engine in JavaScript. The engine uses a WebGL rendering pipeline and supports VR using WebXR. This is architected almost identical to my C++ game engine with differences to account for language differences between C++ and JavaScript.</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>Nov 2024 - May 2025</p>
+						<p><b>Technologies: </b>JavaScript | WebGL2 | WebXR</p>
+						<p><b>Role: </b>Sole Developer</p>
+						<a class="button" href="https://sandbox.reynisal.com" target="_blank">
+							<p>Check it out <span class="material-symbols-outlined">open_in_new</span></p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Architecture almost identical to my C++ game engine with reusable engine systems for rendering, model loading, debug rendering, event system and dev console.</li>
+                        <li>WebGL rendering pipeline with support for custom shaders in GLSL.</li>
+                        <li>Support for 2D and 3D rendering and virtual reality integration using WebXR.</li>
+                        <li>Accounts for language differences between C++ and JavaScript including function and operator overloading, asynchronous disk interactions.</li>
+                        <li>Support for OBJ model loading with a parser written from scratch.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Handling Differences between JavaScript and C++</h3>
+					<ul>
+						<li>JavaScript inherently does some operations asynchronously, the most important one being file loading. To load textures, shaders and data files, my web engine uses Promises and the absence of textures and shaders must be handled during rendering.</li>
+						<li>While my C++ engine uses XML as the primary format for data-driven code, my web engine replaces this with JSON since the notation and parsing of JSON files is simpler in JavaScript.</li>
+						<li>Since JavaScript passes all objects by reference and primitive data types by value, any objects being passed had to be handled carefully.</li>
+						<li>JavaScript does not offer method or operator overloading, so operations like arithmetic on vectors is handled using methods with special names such as Add, Scale, GetSum, GetScaled, etc.</li>
+					</ul>
+					<pre data-enlighter-language="js" id="async-texture-loading-codeblock" class="codeblock"></pre>
+					<pre data-enlighter-language="js" id="overloading-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>SpectorJS: Debugging WebGL</h3>
+					<ul>
+						<li>Developing graphics features in my C++ engine involved extensive use of RenderDoc to help debug issues with DirectX.</li>
+						<li>SpectorJS is a JavaScript framework for troubleshooting WebGL issues and I use this for my web engine.</li>
+					</ul>
+					<div class="carousel-container" id="spectorjs-carousel-container">
+						<div class="carousel" id="spectorjs-carousel">
+							<div class="slide"><img src="../../img/ReyWebEngine/SpectorJS.png"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script type="text/javascript" src="../../js/enlighterjs.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/ReyWebEngine.js"></script>
+    </body>
+</html>

@@ -1,29 +1,3 @@
-
-const sections = ['landing', 'youtube', 'about', 'experience', 'publications']
-
-const observer = new IntersectionObserver(function(entries) {
-    if (entries[0].isIntersecting === true) {
-        if (entries[0]['intersectionRatio'] > 0.2) {
-            for (var s in sections) {
-                if (s !== 'landing') {
-                    document.getElementById(sections[s] + '-navitem').classList.remove("selected-navitem");
-                }
-            }
-            document.getElementById(entries[0].target.id + "-navitem").classList.add("selected-navitem");
-        }
-    }
-    else
-        document.getElementById(entries[0].target.id + "-navitem").classList.remove("selected-navitem");
-}, { threshold: [0, 0.2] });
-
-observer.observe(document.querySelector("#landing"));
-// observer.observe(document.querySelector("#projects"));
-observer.observe(document.querySelector("#youtube"));
-observer.observe(document.querySelector("#about"));
-observer.observe(document.querySelector("#experience"));
-observer.observe(document.querySelector("#publications"));
-
-
 // Menu-Toggler animations
 
 $('.menu-toggler').on('click', function() {
@@ -61,7 +35,75 @@ $('.project-archive-link').on('click', function() {
     $('#project-archive').toggleClass('hidden')
 })
 
+const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const prefersDarkMode = themeQuery.matches;
+var themeStr = localStorage.getItem('theme');
+var isThemeToggled = false;
+if (themeStr !== null)
+{
+	isThemeToggled = (prefersDarkMode && themeStr === 'light') || (!prefersDarkMode && themeStr === 'dark');
+}
+
+if (isThemeToggled)
+{
+	isThemeToggled = !isThemeToggled;
+	toggleTheme();
+}
+
 // Hide preloader
 $(window).on('load', function() {
-    $('#preloader-container').addClass("hidden")
+	$('#preloader-container').addClass("hidden");
 })
+
+function toggleTheme() {
+	const rootElement = document.documentElement;
+
+	isThemeToggled = !isThemeToggled;
+
+	var switchToLight = false;
+	if (prefersDarkMode)
+	{
+		switchToLight = isThemeToggled;
+	}
+	else
+	{
+		switchToLight = !isThemeToggled;
+	}
+
+
+	if (switchToLight)
+	{
+		rootElement.style.setProperty('--theme-color', '#E5E5E5');
+		rootElement.style.setProperty('--anti-theme-color', '#4F4F4F');
+		rootElement.style.setProperty('--primary-text-color', '#828282');
+		rootElement.style.setProperty('--secondary-text-color', '#4F4F4F');
+		rootElement.style.setProperty('--accent-color', '#9B51E0');
+		rootElement.style.setProperty('--shadow-color', '0');
+		rootElement.style.setProperty('--light-span-display', 'inline');
+		rootElement.style.setProperty('--dark-span-display', 'none');
+		rootElement.style.setProperty('--light-tooltip-visibility', 'visible');
+		rootElement.style.setProperty('--dark-tooltip-visibility', 'hidden');
+
+		localStorage.setItem('theme', 'light');
+	}
+	else
+	{
+		rootElement.style.setProperty('--theme-color', '#121212');
+		rootElement.style.setProperty('--anti-theme-color', '#E5E5E5');
+		rootElement.style.setProperty('--primary-text-color', '#D1D1D1');
+		rootElement.style.setProperty('--secondary-text-color', '#A6A6A6');
+		rootElement.style.setProperty('--accent-color', '#7A3EB9');
+		rootElement.style.setProperty('--shadow-color', '255');
+		rootElement.style.setProperty('--dark-span-display', 'inline');
+		rootElement.style.setProperty('--light-span-display', 'none');
+		rootElement.style.setProperty('--dark-tooltip-visibility', 'visible');
+		rootElement.style.setProperty('--light-tooltip-visibility', 'hidden');
+
+		localStorage.setItem('theme', 'dark');
+	}
+}
+
+themeQuery.addEventListener('change', () => {
+	if (localStorage.getItem('theme') === null)
+		toggleTheme();
+});

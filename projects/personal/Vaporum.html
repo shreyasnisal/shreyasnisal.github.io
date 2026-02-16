@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/Vaporum/Vaporum.png" />
+		<meta content="Shreyas Nisal: Vaporum" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<!-- EnlighterJS Resources !-->
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.min.css" />
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.dracula.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>Vaporum: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="container">
+			<div class="project-landing">
+				<h1>Vaporum</h1>
+				<img width="100%" src="../../img/Vaporum/Vaporum_Attacks.gif">
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+                        <p>Vaporum is a networked turn-based strategy game using a Network System implemented in my custom C++ game engine with WinSock. It features a hex grid with 3D tank models along with movement animations and particle effects for attack and damage.</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>Aug 2024 - Dec 2024</p>
+						<p><b>Technologies: </b>Rey Engine (Custom C++ Game Engine)</p>
+						<p><b>Role: </b>Sole Developer</p>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Turn-based networked multiplayer game using WinSock</li>
+                        <li>Supports hot-seat local play or networked multiplayer play using commands sent over the network.</li>
+						<li>Features a clean UI with support for mouse or keyboard controls.</li>
+                        <li>3D models loaded from OBJ files using a custom OBJ parser.</li>
+                        <li>Diffuse, specular and emissive textures with a Phong shader.</li>
+                        <li>Data-driven architecture from XML files for tank types and maps.</li>
+                        <li>Movement animations using Catmull-Rom splines and CPU-driven particle effects.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<div class="carousel-container" id="vaporum-carousel-container">
+						<button class="carousel-nav-button prev disabled" onclick="rotateVaporumCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+						<div class="carousel" id="vaporum-carousel">
+							<div class="slide"><img src="../../img/Vaporum/Menu.png"></div>
+							<div class="slide"><img src="../../img/Vaporum/Vaporum_Debug.gif"></div>
+							<div class="slide"><img src="../../img/Vaporum/Vaporum_Attacks.gif"></div>
+							<div class="slide"><img src="../../img/Vaporum/Vaporum_Networked.gif"></div>
+						</div>
+						<button class="carousel-nav-button next" onclick="rotateVaporumCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+					</div>
+					<div class="thumbnail-container" id="vaporum-thumbnails"></div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Hex Tile Grid</h3>
+					<ul>
+						<li>The game uses a hex tile grid, which involves converting hex tile grid coordinates to world positions and vice-versa.</li>
+						<li>I created a grid-to-world transform matrix based on the basis vectors of the grid and used the matrix for these conversions.</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="hex-grid-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Net System using WinSock</h3>
+					<ul>
+						<li>I created a reusable net system in my engine using WinSock using TCP/IP for real-time data transfer over a network.</li>
+						<li>The net system uses a client-server model and gracefully handles drops in the connection from the other end.</li>
+						<li>Messages can be queued from game code and are sent before the next update.</li>
+						<li>Game code can also query the net system for messages received over the network.</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="netsystem-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Movement Animations using Catmull-Rom Splines</h3>
+					<ul>
+						<li>The game uses a hex tile grid, which involves converting hex tile grid coordinates to world positions and vice-versa.</li>
+						<li>I created a grid-to-world transform matrix based on the basis vectors of the grid and used the matrix for these conversions.</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="unit-movement-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+        </div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script type="text/javascript" src="../../js/enlighterjs.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/Vaporum.js"></script>
+    </body>
+</html>

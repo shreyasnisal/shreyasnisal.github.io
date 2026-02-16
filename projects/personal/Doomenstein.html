@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/Doomenstein/Doomenstein_Alpha.png" />
+		<meta content="Shreyas Nisal: Doomenstein" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<!-- EnlighterJS Resources !-->
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.min.css" />
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.dracula.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>Doomenstein: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="container">
+			<div class="project-landing">
+				<h1>Doomenstein</h1>
+				<div class="iframe-container">
+					<img class="project-page-img" src="../../img/Doomenstein/Doomenstein.gif" />
+				</div>
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+						<p>Doomenstein started off as a retro-style 3D first-person shooter with 8-facing sprites, supporting local multiplayer with keyboard+mouse and XBox controllers with up to 4 players. Later, I added 3D model loading from OBJ files, procedurally generating a world featuring rocks and trees and 3 waves of enemies that the player must clear to win the game. The game also included shadow maps using DirectX11's programmable graphics pipeline, using a depth buffer and two rendering passes to generate the world from the light's perspective and use the depth buffer to generate shadows</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>Jan 2024 - May 2024</p>
+						<p><b>Technologies: </b>Rey Engine (Custom C++ Game Engine)</p>
+						<p><b>Role: </b>Sole Developer</p>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Billboarded 8-facing sprites with animations for walking, attack, taking damage and dying.</li>
+						<li>Billboarded sprite particles for blood splatter effects, plasma gun projectile firing and more.</li>
+						<li>Local multiplayer with keyboard+mouse and controllers, supporting up to 4 players.</li>
+						<li>3D model loading from OBJ files, supporting diffuse colors from MTL files and textures on models.</li>
+						<li>3 weapons (pistol, rifle and grenade launcher), 3 enemy types (melee soldier, ranged soldier, tank) and 3 waves.</li>
+						<li>3D cube particles for visual effects on firing guns, grenade explosions and blood splatter.</li>
+						<li>Directional lighting with shadow maps generated using a depth buffer and two rendering passes.</li>
+						<li>VR support using OpenXR.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<div class="carousel-container" id="doomenstein-carousel-container">
+						<button class="carousel-nav-button prev disabled" onclick="rotateDoomensteinCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+						<div class="carousel" id="doomenstein-carousel">
+							<div class="slide"><img src="../../img/Doomenstein/DoomensteinVR.gif"></div>
+							<div class="slide"><img src="../../img/Doomenstein/Doomenstein_Gold.png"></div>
+						</div>
+						<button class="carousel-nav-button next" onclick="rotateDoomensteinCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+					</div>
+					<div class="thumbnail-container" id="doomenstein-thumbnails"></div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>8-Facing Billboarded Sprites</h3>
+					<ul>
+						<li>The initial project involved 8-facing billboarded sprites with animations for enemies.</li>
+						<li>I created an AnimationGroupDefinition class with a list of sprite animations (SpriteAnimDefinition).</li>
+						<li>The AnimationGroupDefinition class could be queried for the animation that gave the largest dot product with a given vector (camera direction).</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="eight-facing-sprite-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Shadow Maps</h3>
+					<ul>
+						<li>I implemented dynamic shadow maps for 3D objects using a separate shadow-rendering pass from the light's point-of-view.</li>
+						<li>Wrote a separate shader for creating a shadow map using a separate depth stencil view.</li>
+						<li>During the render pass, the shadow DSV is sampled to determine the color in the pixel shader.</li>
+					</ul>
+					<pre data-enlighter-language="c" id="shadow-shader-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+        </div>
+	</div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script type="text/javascript" src="../../js/enlighterjs.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/Doomenstein.js"></script>
+    </body>
+</html>

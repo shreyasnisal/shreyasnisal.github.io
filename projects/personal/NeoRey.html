@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/NeoRey/NeoRey_Dungeon.png.png" />
+		<meta content="Shreyas Nisal: NeoRey Editor" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>NeoRey Engine: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+				
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+		
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+        <div class="container">
+			<div class="project-landing">
+				<h1>NeoRey Engine and Editor</h1>
+				<img width="100%" src="../../img/NeoRey/NeoRey_Dungeon.png">
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+						<p>NeoRey is my new C++ engine with an editor built using ImGui. It features hot-reload for the game DLL written in C++ and exposed to the editor as script components.</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>July 2025 - Present</p>
+						<p><b>Technologies: </b>C++ | DirectX11 | ImGui</p>
+						<p><b>Role: </b>Sole Developer</p>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Entity-Component-System (ECS) architecture with flyweight entities and templated component storages.</li>
+						<li>Hot-reload for game code consumed by the editor as script components through a script registry.</li>
+						<li>Header parsing using Python for generating C++ code from custom annotations to expose fields to the editor.</li>
+						<li>Runtime field reflection and ImGui widget creation based on field type.</li>
+						<li>Entity and component serialization with scene saving in a custom binary file format.</li>
+						<li>Custom physics utilities with script callbacks for collision and trigger events.</li>
+						<li>3D editing with static and skeletal models imported from OBJ and FBX files.</li>
+						<li>2D spritesheet animations and 3D animation with an animation controller for creating state machines.</li>
+						<li>Scripting API for creating and modifying components and controlling animation states.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Entity-Component-System Architecture</h3>
+					<p>I used an ECS architecture for entities and components, with flyweight entities holding only a UID and script components for game code.</p>
+					<ul>
+						<li>Templated component storages storing entity-component mappings based on component type.</li>
+						<li>Methods to get all components as ComponentBase* data from any entity.</li>
+						<li>Script Registry for game code to add script components at runtime and creating scripts by name.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Runtime Reflection, Exposing Fields to Editor and Entity/Component Serialization</h3>
+					<p>With no built-in features for runtime reflection, I created my own system for runtime reflection which helped with exposing fields to the editor and entity/component serialization.</p>
+					<ul>
+						<li>FieldDescriptor struct for storing field name, type (FieldType enum) and memory offset from component's memory address.</li>
+						<li>Custom header parser written in Python for generating C++ code to register fields for components based on custom [[EditorField]] annotations.</li>
+						<li>Widget functions to create inspector widgets based on field type.</li>
+						<li>Custom binary file format for saving serialized entities and components.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>2D Physics</h3>
+					<p>NeoRey consists of a 2D physics system with Rigidbody2D and Collider2D components.</p>
+					<ul>
+						<li>Full box collisions with bounciness, friction and angular effects.</li>
+						<li>Options on Rigidbody2D to freeze rotation and mark entities as static, dynamic or kinematic.</li>
+						<li>Ability to create triggers with script callbacks for collision and trigger events.</li>
+					</ul>
+					<div class="iframe-container">
+						<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/waDkVP5wf8A" title="ArchiLeapVR Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>2D Sprite Animations</h3>
+					<p>NeoRey also includes a 2D sprite animation system with a editor.</p>
+					<ul>
+						<li>Ability to create and editor multiple animation clips on any entity.</li>
+						<li>Animation editor with editor preview features.</li>
+						<li>Scripting API to control animation state changes.</li>
+					</ul>
+					<div class="iframe-container">
+						<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/W4tT8yAoKls" title="ArchiLeapVR Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>3D Physics</h3>
+					<p>NeoRey also includes a 3D physics system with Rigidbody3D and Collider3D components with similar features as the 2D animation system.</p>
+					<ul>
+						<li>Full box collisions with rotation effects, bounciness and friction.</li>
+						<li>Options on Rigidbody3D to freeze rotation on any axis and mark entities as static, dynamic or kinematic.</li>
+						<li>Script callbacks for collision and trigger events.</li>
+					</ul>
+					<div class="iframe-container">
+						<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/Vp4P0rz_L0w" title="ArchiLeapVR Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Static and Skeletal Meshes with 3D Animations</h3>
+					<p>NeoRey allows importing 3D models from obj files or fbx files as static or skeletal meshes with animations.</p>
+					<ul>
+						<li>Animation editor to create animation state machines on entities with skeletal mesh components.</li>
+						<li>Scripting API to control animation states.</li>
+						<li>Custom shader for GPU skinning for skeletal meshes using bone hierarchies with weights.</li>
+					</ul>
+					<div class="iframe-container">
+						<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/ArG_vDE0J8k" title="ArchiLeapVR Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/ReyEngine.js"></script>
+    </body>
+</html>

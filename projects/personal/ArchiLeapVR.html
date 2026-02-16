@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/ArchiLeapVR/ArchiLeapVR_Logo.png" />
+		<meta content="Shreyas Nisal: ArchiLeapVR" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<!-- EnlighterJS Resources !-->
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.min.css" />
+		<link rel="stylesheet" href="../../css//enlighterjs/enlighterjs.dracula.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>ArchiLeapVR: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		
+        <div class="container">
+			<div class="project-landing">
+				<h1>ArchiLeapVR</h1>
+                <img width="100%" src="../../img//ArchiLeapVR/ArchiLeapVR.gif">
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+						<p>ArchiLeapVR is a first-person VR platformer with an in-game level editor focused on intuitive level creation and iteration in VR. The level editor allows basic operations on game entities to afford creation of end-to-end levels while in VR. Designers can switch between play and edit modes to test levels and iterate on them, and save these levels for players to play directly.</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>August 2024 - May 2025</p>
+						<p><b>Technologies: </b>Rey Engine (Custom C++ Game Engine) | DirectX11 | OpenXR</p>
+						<p><b>Role: </b>Sole Developer</p>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+                        <li>Virtual Reality (VR) integration in my custom C++ game engine using OpenXR to support simultaneous VR and desktop rendering.</li>
+                        <li>Reusable VR module integrated with the engine to allow any game to be ported to VR using Oculus Rift.</li>
+                        <li>Support for editing on computer (using keyboard + mouse) or VR (using VR controllers).</li>
+						<li>3D platforming with intuitive VR controls during gameplay, including grabbing objects and ledges and punching enemies.</li>
+						<li>In-game level editor with intuitive VR controls, allowing creation of end-to-end levels for the game by creating, translating, rotating, scaling and cloning entities.</li>
+                        <li>Custom binary file format for saving and loading maps with perforce integration to check out maps when editing.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>VR Integration: Keeping It Super Simple</h3>
+					<!-- <p>Integrating VR in my custom game engine posed a software architecture challenge where I wanted to use existing systems as much as possible while keeping it easy for game code to integrate VR for any game. I created a VR module that communicates directly with the renderer module in my engine, with separate classes for VR controllers and hands. Having created this reusable engine system, I went back to old games to make simple game changes to integrate VR in them.</p> -->
+                    <!-- <p>The new system also added complexity in terms of handling three coordinate systems instead of two- OpenXR coordinate system, DirectX11 coordinate system and the game coordinate system. Like all other engine modules, I kept the VR module coordinate system agnostic and added queries for my specific game coordinate system. With this model I can easily add queries for any my VR module to support any coordinate system chosen for a game.</p> -->
+					<ul>
+						<li>Super easy for game code to integrate VR- define USE_OPENXR in EngineBuildPreferences.hpp, render the scene two times for left and right eye views, and manage XR cameras.</li>
+						<li>OpenXR uses a triple-buffering strategy, so the OpenXR system gets the swapchain textures and depth stencils using xrEnumerateViews, and the renderer queries these when rendering for an eye.</li>
+						<li>There are conversions between three coordinate systems- the game coordinate system, the DirectX11 coordinate system and the OpenXR coordinate system.</li>
+					</ul>
+					<div class="carousel-container" id="openXR-integration-carousel-container">
+						<div class="carousel" id="openXR-integration-carousel">
+							<div class="slide"><img src="../../img/ArchiLeapVR/OpenXR_UML_ClassDiagram - OpenXR.jpg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Intuitive VR Controls</h3>
+					<p>Virtual Reality headsets and controllers allow for very different interactions with a 3D world as compared to traditional computers, and one important part of the project was to account for these VR affordances and design intuitive editing controls for this input modality.</p>
+					<ul>
+						<li>VR controllers are 2 point-and-click interfaces with 6 degrees of freedom as opposed to a single point-and-click interface on a computer with 2 degrees of freedom (mouse).</li>
+						<li>The editor uses raycasts from controller positions based on the controller orientations to determine positions for entities being spawned or translated.</li>
+						<li>Rotating entities involves grabbing them and rotating the controller.</li>
+						<li>Users can scale entities using both hands to grab the entity and pull hands towards or away from the center of the entity.</li>
+						<li>The editor also allows users to create links between specific levers/buttons and doors/moving platforms, delete entities or drop entities to the ground.</li>
+					</ul>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="slide">
+								<div class="iframe-container">
+									<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/1qWHo1JMfNQ" title="ArchiLeapVR Level Editing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div class="project-description-container">
+				<div class="project-description">
+					<h3>Platformer Mechanics</h3>
+					<!-- <p>Platformer games often involve certain standard mechanics including jumping, pickups, puzzles involving levers, buttons, doors and moving platforms and combat mechanics involving enemies. ArchiLeap consists of all of these mechanics with purely physics-driven character control and interactions with entities. Once again, accounting for differences between traditional input modalities and VR input mechanisms involved thoughtful design. The game includes ledge-grab as a mechanic and instead of just pressing or holding down a key on a keyboard, ledges can be grabbed by reaching out with either hand and pressing the grab button followed by pulling yourself up. Similarly, levers in VR are interacted with by reaching out with either hand and grabbing the lever followed by moving the hand to move the lever in the game. Players can also grab crates to place them on buttons or grab enemies to throw them off platforms. Alternatively, enemies can be defeated by punching them with a closed fist.</p> -->
+					<p>Platformer games often involve standard mechanics such as jumping, pickups, puzzles involving levers, buttons, doors and moving platforms, and combat mechanics involving enemies. ArchiLeap consists of all of these and accounts for the difference in input modality when implementing these.</p>
+					<ul>
+						<li>Carefully chosen entities to demonstrate differences in interaction with entities on a computer vs a VR headset.</li>
+						<li>Levers are moved by reaching out with a controller, grabbing the handle and moving the controller.</li>
+						<li>Ledge grab involves reaching out with controllers and grabbing the ledge using the grip buttons followed by pulling controllers down to emulate pulling yourself up onto a ledge.</li>
+						<li>Animated enemies with simple transform animations on different model groups.</li>
+						<li>Enemies can be defeated by punching or grabbing enemies and throwing them off platforms.</li>
+						<li>Crates can be picked up with the grip button and placed on buttons.</li>
+					</ul>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="slide">
+								<div class="iframe-container">
+									<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/7PlsRhoslQA" title="ArchiLeapVR Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div class="project-description-container">
+				<div class="project-description">
+					<h3>Map Save/Load</h3>
+					<!-- <p>I implemented a <b>custom binary file format</b> to save and load maps, with certain entity data members being serialized while other data members are considered state variables that are always initialized with specified values and only change during gameplay (and not editing). All entities in the game also have an editor state that they are reset to any time a user switches from the “Play” mode to the “Edit” mode. On submitting my maps to perforce, I realized a missing piece from my editor, which was that I could not edit maps without manually checking them out from perforce. Having used Unreal, I wanted to implement a similar system where my editor would allow users to connect to perforce from within the executable and check out any maps being edited. I used a simple way to achieve this by running terminal commands from within my editor, and a tier-2 system for this would be to use the Helix Core C/C++ API for full perforce integration.</p> -->
+					<ul>
+						<li><b>Custom binary file format</b> to save and load maps.</li>
+						<li>Gaps in map array are stored as 0xFF bytes to ensure EntityUID matches index in the <code>std::vector</code>.</li>
+						<li>Specific state variables are stored for each entity, other variables have a predefined value initialized during entity construction.</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="map-save-load-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Perforce Integration</h3>
+					<ul>
+						<li>Users can connect to perforce using their username, server and workspace.</li>
+						<li>Error messages for invalid configuration and valid configuration with project directory not in workspace.</li>
+						<li>Map save files submitted to perforce are checked out automatically if connected to perforce.</li>
+					</ul>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="slide"><img src="../../img/ArchiLeapVR/Perforce.png"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Undo/Redo Actions</h3>
+					<ul>
+						<li>Both controllers perform identical options- users can move entities with either hand, etc.</li>
+						<li>Each controller maintains its own undo/redo stacks.</li>
+						<li>Actions involving both controllers (scaling) only pushes onto one controller which is considered the controller <i>responsible</i> for scaling.</li>
+						<li>Undoing an action pushes the opposite action onto the redo stack- for example, undoing a create action performs a delete action and pushes a create action on the undo stack.</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="undo-redo-codeblock" class="codeblock"></pre>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Off-Center Perspective Projection</h3>
+					<ul>
+						<li>Using a centered perspective projection matrix for stereo views causes double-vision blur.</li>
+						<li>The same object appears in different positions for the different cameras, causing this blur.</li>
+						<li>The solution is to use an off-center perspective projection matrix, which creates a view frustum that is asymmetric around the camera axis.</li>
+						<li>The off-center perspective projection can be split up into a centered perspective projection matrix and a shear matrix with the latter creating the asymmetry.</li>
+					</ul>
+					<pre data-enlighter-language="cpp" id="offcenterperspectivedemo-codeblock" class="codeblock"></pre>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="slide"><img src="../../img/ArchiLeapVR/OffCenterProjectionDemo.gif"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Polished Experience through Iterations with Designers</h3>
+					<ul>
+						<li>Conducted playtests with designers to iterate on the editor interface.</li>
+						<li>Designers enjoyed editing in VR and had insightful comments on how they would go about creating levels.</li>
+						<li>Designer comment after a playtest: "I would block out the main layout of the level on the computer since it's faster on that, and do fine-tuning in VR which allows for faster iteration."</li>
+					</ul>
+				</div>
+			</div>
+
+        </div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script type="text/javascript" src="../../js/enlighterjs.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/ArchiLeapVR.js"></script>
+    </body>
+</html>

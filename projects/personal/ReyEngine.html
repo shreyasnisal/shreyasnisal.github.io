@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/ReyEngine/ModelViewer.png" />
+		<meta content="Shreyas Nisal: C++ Game Engine" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>Rey Engine: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="container">
+			<div class="project-landing">
+				<h1>Rey Engine</h1>
+				<img width="100%" src="../../img/ReyEngine/ModelViewer.png">
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+						<p>My C++ game engine has a DirectX11 rendering pipeline and VR support using OpenXR. The engine has math and physics utilities, a UI System and other engine systems required for 2D and 3D games. I've developed several games using this engine including 2D and 3D games (<a href="ReyTD.html">ReyTD</a>, <a href="Vaporum.html">Vaporum</a>, <a href="SimpleMinerVR.html">SimpleMinerVR</a>, <a href="Doomenstein.html">Doomenstein</a>) and a <a href="ArchiLeapVR.html">virtual reality level editor</a>.</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>Aug 2023 - May 2025</p>
+						<p><b>Technologies: </b>C++ | DirectX11 | FMOD | OpenXR</p>
+						<p><b>Role: </b>Sole Developer</p>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Reusable systems for 2D and 3D rendering, sprite sheet animations, UI, audio, input using keyboard, mouse and up to 4 Xbox controllers, networking and virtual reality integration.</li>
+						<li>Math, physics and raycast utilities with unit tests and visual tests.</li>
+						<li>DevConsole, EventSystem, multithreading, heatmaps support</li>
+						<li>3D model loading from OBJ and MTL files.</li>
+						<li>OBJ parser written from scratch with support for model groups and multiple material files.</li>
+						<li>XML parsing and custom binary file reading/writing.</li>
+                        <li>Virtual Reality integration using OpenXR.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Games Developed using my C++ Engine</h3>
+					<div class="carousel-container" id="games-carousel-container">
+						<button class="carousel-nav-button prev disabled" onclick="rotateGamesCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+						<div class="carousel" id="games-carousel">
+							<div class="slide"><img src="../../img/ReyEngine/Starship.gif"></div>
+							<div class="slide"><img src="../../img/ReyEngine/Libra.gif"></div>
+							<div class="slide"><img src="../../img/Doomenstein/Doomenstein.gif" onclick="window.location.href = 'Doomenstein.html';" style="cursor: pointer"></div>
+							<div class="slide"><img src="../../img/SimpleMinerVR/SimpleMinerVR.gif" onclick="window.location.href = 'SimpleMinerVR.html';" style="cursor: pointer"></div>
+							<div class="slide"><img src="../../img/Vaporum/Vaporum_Attacks.gif" onclick="window.location.href = 'Vaporum.html';" style="cursor: pointer"></div>
+							<div class="slide"><img src="../../img/ReyTD/ReyTD_Animated.gif" onclick="window.location.href = 'ReyTD.html';" style="cursor: pointer"></div>
+						</div>
+						<button class="carousel-nav-button next" onclick="rotateGamesCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+					</div>
+					<div class="thumbnail-container" id="games-thumbnails"></div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Math Utilities</h3>
+					<p>While developing my engine, I wrote several math and physics functions, and often wrote visual tests to ensure that these functions worked as I expected them to.</p>
+					<ul>
+						<li>My math utilities include commonly-used math classes including Vec2, Vec3, Vec4, Matrix (Mat44) and EulerAngles.</li>
+						<li>The engine also has functions for raycasts vs different primitive shapes in 2D and 3D, and a special raycast vs a tile grid.</li>
+						<li>It contains functions for easing curves, cubic bezier curves, cubic hermite curves and Catmull-Rom splines.</li>
+					</ul>
+					<div class="carousel-container" id="visualtests-carousel-container">
+						<button class="carousel-nav-button prev disabled" onclick="rotateVisualTestsCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+						<div class="carousel" id="visualtests-carousel">
+							<div class="slide"><img src="../../img/ReyEngine/MVT_Splines.gif"></div>
+							<div class="slide"><img src="../../img/ReyEngine/MVT_Pachinko.gif"></div>
+							<div class="slide"><img src="../../img/ReyEngine/MVT_RaycastVsTileGrid.png"></div>
+						</div>
+						<button class="carousel-nav-button next" onclick="rotateVisualTestsCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+					</div>
+					<div class="thumbnail-container" id="visualtests-thumbnails"></div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Dev Console and Event System</h3>
+					<p>The engine contains a dev console that can be used to type and execute commands through the EventSystem.</p>
+					<ul>
+						<li>Both the DevConsole and the EventSystem are thread-safe, using atomic templates for primitive data types and mutexes for objects.</li>
+						<li>Game code can subscribe to additional events not included in the engine and these will show up in the dev console.</li>
+						<li>The dev console maintains a list of DevConsoleLine structures that include the text, a color and metadata including the frame number and timestamp for the message.</li>
+					</ul>
+					<div class="carousel-container">
+						<div class="carousel">
+							<div class="slide"><img src="../../img/ReyEngine/DevConsole.gif"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>UI System</h3>
+					<p>Rey Engine implements its own custom UI system that allows the creation of widgets including text, image, buttons and text input fields.</p>
+					<ul>
+						<li>My UI system consists of a root widget that widgets without a parent specified use as the parent.</li>
+						<li>The root widget is initialized with the dimensions of the viewport and all other widgets use normalized coordinates for position and dimensions relative to their parent.</li>
+						<li>Widgets can be parented to other widgets, allowing simple widget groups.</li>
+						<li>The system can be used to easily create custom widgets such as popups, ensuring that widgets behind popups cannot be interacted with.</li>
+						<li>Support for keyboard, mouse and VR or any requested combination of these.</li>
+					</ul>
+				</div>
+			</div>
+
+        </div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/ReyEngine.js"></script>
+    </body>
+</html>

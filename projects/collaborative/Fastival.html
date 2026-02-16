@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="/img/Fastival/Fastival.png" />
+		<meta content="Shreyas Nisal: Fastival" property="og:title">
+		<meta property="og:url" content="https://gamedev.shreyasnisal.com" />
+		<meta
+		content="Hi, I'm Shreyas! I'm a game programmer with experience in developing custom game engines in C++ and JavaScript, and in using Unreal and Unity to build games."
+		property="og:description" />
+		<meta property="og:type" content="website" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+		<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+		<link rel="stylesheet" href="../../css/custom.css">
+		<link rel="shortcut icon" type="image/png" href="../../img/Logo.png" />
+		<title>Fastival: Shreyas Nisal</title>
+	</head>
+
+    <body>
+		<div class = "mobile-top-bar">
+			<div class="nav-brand">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+		<i class="menu-toggler material-icons">menu</i>
+		</div>
+		<nav class="top-nav not-open">
+			<i class="menu-toggler-close-button material-icons">close</i>
+			<div class="nav-brand large-screen-only">
+				<a href="/">SHREYAS NISAL</a>
+			</div>
+			<ul class="nav-list">
+				<li style="display:none">
+					<a id="landing-navitem" href="/" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a id="about-navitem" href="/#about" class="nav-link">About</a>
+				</li>
+				
+				<li class="dropdown">
+					<a id="collaborative-navitem" href="/#collaborative" class="nav-link dropdown-toggle">Collaborative Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/collaborative/Imvi.html" class="nav-link">Imvi: Echoes of Harmony</a></li>
+						<li><a href="/projects/collaborative/Fastival.html" class="nav-link">Fastival</a></li>
+						<li><a href="/projects/collaborative/DonuTilt.html" class="nav-link">DonuTilt</a></li>
+					</ul>
+				</li>
+		
+				<li class="dropdown">
+					<a id="projects-navitem" href="/#personal" class="nav-link dropdown-toggle">Personal Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="/projects/personal/NeoRey.html" class="nav-link">NeoRey Editor</a></li>
+						<li><a href="/projects/personal/ArchiLeapVR.html" class="nav-link">ArchiLeapVR</a></li>
+						<li><a href="/projects/personal/ReyEngine.html" class="nav-link">Rey Engine</a></li>
+						<li><a href="/projects/personal/ReyWebEngine.html" class="nav-link">Rey Web Engine</a></li>
+						<li><a href="/projects/personal/Vaporum.html" class="nav-link">Vaporum</a></li>
+						<li><a href="/projects/personal/ReyTD.html" class="nav-link">ReyTD</a></li>
+						<li><a href="/projects/personal/SimpleMinerVR.html" class="nav-link">SimpleMinerVR</a></li>
+						<li><a href="/projects/personal/Doomenstein.html" class="nav-link">Doomenstein</a></li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="/docs/Resume_ShreyasNisal.pdf" target="_blank" class="nav-link">Resume</a>
+				</li>
+				<li>
+					<a href="https://shreyasnisal.com" target="_blank" class="nav-link">Past Work <span class="material-symbols-outlined">open_in_new</span></a>
+				</li>
+				<li>
+					<a class="tooltip-container" onclick="toggleTheme()" style="cursor: pointer;">
+						<span class="material-symbols-outlined dark">light_mode</span>
+						<span class="tooltip-text dark" class="">Lumos!</span>
+						<span class="material-symbols-outlined light">dark_mode</span>
+						<span class="tooltip-text light">Nox!</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="container">
+			<div class="project-landing">
+				<h1>Fastival</h1>
+				<div class="iframe-container">
+					<iframe src="https://www.youtube.com/embed/Ep-P0Ikm6x8" title="Fastival Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="row">
+					<div class="column half">
+						<h3>Introduction</h3>
+						<p>Race through an enchanting carnival and be on the lookout for wacky obstacles and cool shortcuts as you compete against up to three other friends in this cute and cartoony arcade racing game!</p>
+					</div>
+					<div class="column half margin-top">
+						<p><b>Duration: </b>Jan 2024 - Jun 2024</p>
+						<p><b>Technologies: </b>Unreal Engine 5 | UE Blueprints</p>
+						<p><b>Team Size: </b>~50 Developers</p>
+						<p><b>Role: </b>Programmer</p>
+					</div>
+				</div>
+
+				<div class="steam-widget-container">
+					<iframe src="https://store.steampowered.com/widget/2830700/" frameborder="0" width="646" height="190"></iframe>
+				</div>
+			</div>
+
+			
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Arcade racer in a carnival setting with abilities matching the theme.</li>
+						<li>Local multiplayer with up to 4-player split-screen.</li>
+						<li>Compete against up to 8 AI racers.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="project-description">
+				<div class="carousel-container" id="fastival-carousel-container">
+					<button class="carousel-nav-button prev disabled" onclick="rotateFastivalCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+					<div class="carousel" id="fastival-carousel">
+						<div class="slide"><img src="../../img/Fastival/CharacterSelect.png"></div>
+						<div class="slide"><img src="../../img/Fastival/SinglePlayer.png"></div>
+						<div class="slide"><img src="../../img/Fastival/Split2.png"></div>
+						<div class="slide"><img src="../../img/Fastival/Split4.png"></div>
+					</div>
+					<button class="carousel-nav-button next" onclick="rotateFastivalCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+				</div>
+				<div class="thumbnail-container" id="fastival-thumbnails"></div>
+			</div>
+
+			<div class="project-description-container">
+				<div class="project-description">
+					<h3>Responsibilities</h3>
+					<ul>
+						<li>Supported cross-discipline teams on urgent and high-priority tasks on race logic, UI and optimization.</li>
+						<li>Implemented multiplayer controls for menu UI with UMG and Enhanced Input System.</li>
+						<li>Built windows executables and managed configuration for Linux builds for Steam Deck compatibility.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div style="margin-top: 5%;">
+				<img src="../../img/FastivalTeam.jpg" width="100%" />
+			</div>
+
+        </div>
+
+		<div class="" id="social">
+			<div class="social-links">
+				
+				<a target="_blank" href="mailto:shreyasnisal@gmail.com">
+					<i class="fas fa-envelope"></i>
+				</a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/shreyasnisal/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				
+				<a target="_blank" href="https://github.com/shreyasnisal">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://www.youtube.com/c/ShreyasNisal">
+					<i class="fab fa-youtube"></i>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="footer" id="footer">
+			<p><i class="fa fa-copyright"></i> Made with <i class="fa fa-heart"></i> by Shreyas Nisal</p>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="/js/custom.js"></script>
+		<script src="/js/Fastival.js"></script>
+    </body>
+</html>
